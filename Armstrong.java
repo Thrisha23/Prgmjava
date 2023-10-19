@@ -1,6 +1,5 @@
 public class Armstrong {
      static int result;
-     static int type;
     
     public static void main(String[]args)
     {
@@ -9,7 +8,9 @@ public class Armstrong {
         for(int i=0;i<=999;i++)
         {
            isArmstrong(i);
+           if(result!=-1){
             System.out.println(result);
+           }
             }
 
 
@@ -29,7 +30,7 @@ sum=sum+quoteint*quoteint*quoteint;
          
     }
     else{
-       type=sum;
+        result=-1;
     }
 }
 }
