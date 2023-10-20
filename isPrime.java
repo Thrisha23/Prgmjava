@@ -3,12 +3,14 @@ import java.util.Scanner;
 public class isPrime {
     public static void main(String[]args)
     {
-        Scanner input = new Scanner(System.in);
-        int n=input.nextInt();
-        boolean ans =isPrime(n);
-        System.out.println(ans);
+        try (Scanner scanner = new Scanner(System.in)) {
+            int n=scanner.nextInt();
+            boolean ans =isprime(n);
+            System.out.println(ans);
+        }
+        
     }
-    static boolean isPrime(int n)
+    static boolean isprime(int n)
     {
 if(n<=1)
 {
