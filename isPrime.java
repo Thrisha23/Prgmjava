@@ -10,7 +10,7 @@ public class isPrime {
         }
         
     }
-    static boolean isprime(int n)
+    static boolean isprime(int n)1
     {
 if(n<=1)
 {
